@@ -28,6 +28,12 @@ function favorite(req, res, next) {
     res.send("success")
 }
 
+function addProperty(req, res, next) {
+    var property = req.body;
+    PROPERTIES.push(property);
+    res.send("success")
+}
+
 function unfavorite(req, res, next) {
     var id = req.params.id;
     for (var i = 0; i < favorites.length; i++) {
