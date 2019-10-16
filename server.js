@@ -20,6 +20,7 @@ app.get('/properties/:id', properties.findById);
 app.post('/properties/likes', properties.like);
 app.post('/properties/favorites', properties.favorite);
 app.delete('/properties/favorites/:id', properties.unfavorite);
+app.post('/properties/add', properties.addProperty);
 
 app.get('/brokers', brokers.findAll);
 app.get('/brokers/:id', brokers.findById);
